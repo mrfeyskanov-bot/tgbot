@@ -549,7 +549,7 @@ def show_subcategory_products(chat_id, category_id, subcat_id, message_id):
     text += "━" * 30 + "\n\n"
     
     for product in items:
-        status = "✅ В АССОРТИМЕНТЕ" if product['available'] else "❌ ПОКА ЧТО НЕТУ"
+        status = "✅ В АССОРТИМЕНТЕ" if product['available'] else "❌ БУДЕТ ПОЗЖЕ"
         price_str = f"{product['price']:,}".replace(',', ' ')
         
         text += f"✨ *{product['name']}*\n"
